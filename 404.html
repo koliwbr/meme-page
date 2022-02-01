@@ -14,11 +14,13 @@
 			
 			#container{
 			outline-style: solid;
-			margin-left: 128px;
-			margin-right: 128px;
+			min-height: 118px;
+			max-width: 512px;
 			padding-top: 1px;
 			padding-bottom: 24px;
 			background-color: #BEBEFF;
+			margin-left: auto;
+			margin-right: auto;
 			}
 			
 			#copyright{
@@ -29,11 +31,12 @@
 			}
 			
 			body{
+			user-select: none;
 			overflow: hidden;
 			background-color: #DDDDFF;
 			font-family: sans-serif;
 			text-align: center;
-			margin-top: 64px;
+			margin-top: min(64px,10%);
 			}
 		</style>
 	</head>
@@ -42,7 +45,7 @@
 		<div id="container">
 		<h1 style="font-family: Comic Sans MS;">Zbłądziłeś?</h1>
 		Nie martw się! Kliknij <a href="/" id="linkacz"> [TUTAJ] <a/> by zaznać kotków 
-		<a href="tajny-kot" style="cursor: default;" style="underline: none;">🐈<a/>!
+		<a href="tajny-kot" style="cursor: default; text-decoration: none;">🐈<a/>!
 		</div>
 		<div id="copyright" style="padding-top: 5px;">&copy; 2022 made by Koliw</div>
 	</body>
