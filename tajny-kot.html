@@ -1,18 +1,47 @@
-<body onload="load()">
-
-Patrzeć nie oznacza widzieć.<br>
-<div class="secret" >Widzisz? Badelajda Towakowiak by cię pochwaliła! :-)</div>
-<style>
-.secret{
-color:white;
-backgrand-coloe:white;
-}
-</style>
-<script>
-var bajon = ()=> {window.location.href="/"}
-var load = () => {
-setTimeout(bajon,5000)
-}
-
-</script>
-
+<html lang="pl">
+   <head>
+	<meta charset="utf-8">
+      <script>
+         var bajon = ()=> {window.location.href="/"}
+         var load = () => {
+         setTimeout(bajon,5000)
+         }
+      </script>
+      <style>
+         .secret{
+			color: #BEBEFF;
+			backgrand-color: #BEBEFF;
+			user-select: text;
+         }
+		 body{
+			user-select: none;
+			overflow: hidden;
+			background-color: #DDDDFF;
+			font-family: sans-serif;
+			text-align: center;
+			margin-top: min(64px,10%);
+		}
+		
+		#container{
+			outline-style: solid;
+			min-height: 118px;
+			max-width: 512px;
+			padding-top: 1px;
+			padding-bottom: 24px;
+			background-color: #BEBEFF;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		h2{
+		font-family: Comic Sans MS;
+		}
+      </style>
+   </head>
+   <body onload="load()">
+	<div id="container">
+      <h2>Patrzeć nie oznacza widzieć.</h2>
+      <div class="secret" >Widzisz? Badelajda Towakowiak by cię pochwaliła! :-)</div>
+	</div>
+   </body>
+</html>
