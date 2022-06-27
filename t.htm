@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="pl">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -16,25 +16,26 @@ p, div{
 <p id="czas">...</p>
 </div>
 <script>
-var countDownDate = new Date("Jul 4, 2022 10:00:00").getTime();
+var countDownDate = new Date("Jul 4, 2022 7:32:00").getTime();
 let f = () => {
   var now = new Date().getTime();
   var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  if (hours<10) hours = "0"+hours
-  if (minutes<10) minutes = "0"+minutes
-  if (seconds<10) seconds = "0"+seconds
+
+  var days    = Math.floor( distance / (1000 * 60 * 60 * 24));
+  var hours   = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60))      / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60))           / 1000);
+
+  hours   = ("0"+Math.abs(hours  )).slice(-2)
+  minutes = ("0"+Math.abs(minutes)).slice(-2)
+  seconds = ("0"+Math.abs(seconds)).slice(-2)
 
 
   document.getElementById("czas").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-  if (distance < 0) {
-    clearInterval(x);
+  /*if (distance < 0) {
     document.getElementById("czas").innerHTML = ":-)";
-  }
+  }*/
 }
 var x = setInterval(f, 1000);
 f()
