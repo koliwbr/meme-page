@@ -3,14 +3,39 @@ body{
     text-align: center;
 	margin: 0px;
 }
-  
+
+#container{
+	margin:25px;
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+	
+}
+
+#header{
+	font-family: Comic Sans MS;
+	padding: 1px;
+	font-size: 56px;
+	text-align: left;
+	background-color: lime;
+	user-select: none;
+}
+
 #div{
- text-align: center;
- font-size: 50px;
- background-color: #58e026;
- border-color: black;
- border-style: solid;
- border-width: 3px;
+	text-align: center;
+	font-size: 50px;
+	background-color: #58e026;
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+}
+
+#content{
+	background-color: pink;
+	border-top-color: black;
+	border-top-style: solid;
+	border-top-width: 3px;
+}
 }
 
 #otherthantitle{
@@ -18,22 +43,67 @@ body{
 }
 
 .kot{
-width: 1em
+	padding: 4px;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	width: 69%;
+	text-align: center;
+	margin-left: auto; 
+	margin-top: 6px; 
+	margin-bottom: 6px; 
+	margin-right: 12px;
+	background-color: magenta;
+	font-family: Comic Sans MS;
+	font-size: 18px;
+	font-weight: bold;
+
 }
 
-img{margin:10px}
+img{
+	margin: 5px;
+	height: auto;
+	max-width: 95%;
+}
  
 .rec{
-    background-color: #bbbbcc;
-    position: relative; 
+    background-color: #bbbbcc; 
     display: inline-block; 
-	width: 33%;
+	width: 40%;
+	margin: 2px;
+	padding: 2px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	overflow-wrap: break-word;
     
 }
 .recbox{
-     margin-left: auto;
-	margin-right: auto;
+    margin: 10px;
 	text-align: center;
+	width: 35%;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	padding: 4px;
 }
   
-.h20{height:20px}
+.h20{
+	height:20px;
+}
+
+h1{
+	font-family: Comic Sans MS;
+}
+
+.contentmaintext{
+	font-family: Comic Sans MS;
+	font-size: 24px;
+}
+
+#footer{
+	background-color: black;
+	color: white;
+	padding: 2px;
+	font-size: 16px;
+}
