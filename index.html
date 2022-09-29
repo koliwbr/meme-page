@@ -53,9 +53,14 @@
    <script type="text/javascript">
      const boo = () => {
         const el = document.getElementById('boo');
-        el.innerHTML = "znajdź <a href=\"toniejeststrona404\" style=\"text-decoration: none; color:black;\">*</a>"
-        el.removeAttribute('id');
+        if(!el){
+        		document.body.classList.add("lepszyfont");
+        		return;
+        	}
 
+        el.innerHTML = "znajdź <a href=\"javascript:boo()\" style=\"text-decoration: none; color:black; font-family: SF Gushing Meadow;\">*</a>"
+        el.removeAttribute('id');
+        el.removeAttribute('onclick')
      }
    </script>
 </body>

@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'SF-Gushing-Meadow';
+    font-family: 'SF Gushing Meadow';
     src: url('font/SFGushingMeadow.eot');
     src: url('font/SFGushingMeadow.eot?#iefix') format('embedded-opentype'),
         url('font/SFGushingMeadow.woff2') format('woff2'),
@@ -17,6 +17,12 @@ body{
     background-color: #aaaabb;
     text-align: center;
 	margin: 0px;
+	font-family: Comic Sans MS;
+}
+
+
+body.lepszyfont {
+	font-family: SF Gushing Meadow !important;
 }
 
 #container{
@@ -28,7 +34,7 @@ body{
 }
 
 #header{
-	font-family: Comic Sans MS;
+	/*font-family: Comic Sans MS;*/
 	padding: 1px;
 	font-size: 56px;
 	text-align: left;
@@ -69,7 +75,7 @@ body{
 	margin-bottom: 6px; 
 	margin-right: 12px;
 	background-color: magenta;
-	font-family: Comic Sans MS;
+	/*font-family: Comic Sans MS;*/
 	font-size: 18px;
 	font-weight: bold;
 
@@ -108,11 +114,11 @@ img{
 }
 
 h1{
-	font-family: Comic Sans MS;
+	/*font-family: Comic Sans MS;*/
 }
 
 .contentmaintext{
-	font-family: SF-Gushing-Meadow;
+/*	font-family: Comic Sans MS;*/
 	font-size: 24px;
 }
 
