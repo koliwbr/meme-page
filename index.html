@@ -24,16 +24,17 @@
 <body>
    <div id="container">
 		<div id="header">
-			<img src="kk.png" draggable="false" style="vertical-align: text-bottom;" /> to kox stronka!
+			<img src="kk.png" draggable="false" style="vertical-align: text-bottom;" alt="KoszerneKotki.pl" /> to kox stronka!
 		</div>
 		<div id="content">
 		<h1>Witamy na Koszernych Kotkach!!!1111</h1>
 		<div class="contentmaintext">
 			Cieszymy się, że odwiedziłeś naszą stronę!<br>
-			Tutaj znajdziesz różne rzeczy, które mogą ci się przydać w życiu! Na przykład... eeee nie wiem... sam se znajdź.
+			Tutaj znajdziesz różne rzeczy, które mogą ci się przydać w życiu! Na przykład... eeee nie wiem... sam se <span id="boo" onclick="boo()"><i>znajdź.</i></span>
 		</div>
 		
-		ヾ( ͝° ͜ʖ͡°)ノ♪┏(＾0＾)┛ヘ(￣ω￣ヘ)ƪ(˘⌣˘)ʃ♪ \(^ω^\ )♪(┌・。・)┌└( ＾ω＾)」(｡･ω･｡)ﾉ♡(´∩｡• ᵕ •｡∩`) (〃ﾟ3ﾟ〃)(っ˘з(˘⌣˘ )(๑˙❥˙๑)(っ˘з(˘⌣˘ )(´∩｡• ᵕ •｡∩`) ෆ╹ .̮ ╹ෆ(•ө•)♡ <span id="uwu">uwu</span>
+		ヾ( ͝° ͜ʖ͡°)ノ♪┏(＾0＾)┛ヘ(￣ω￣ヘ)ƪ(˘⌣˘)ʃ♪ \(^ω^\ )♪(┌・。・)┌└( ＾ω＾)」(｡･ω･｡)ﾉ♡(´∩｡• ᵕ •｡∩`) (〃ﾟ3ﾟ〃)(っ˘з(˘⌣˘ )(๑˙❥˙๑)(っ˘з(˘⌣˘ )(´∩｡• ᵕ •｡∩`) ෆ╹ .̮ ╹ෆ(•ө•)♡ 
+    <span id="uwu"><span id="uwu-arrow-up">↑</span>uwu</span>
 		
 			<div class="kot">
 				<img src="1637663711041.jpg" claas="kot" />
@@ -49,4 +50,12 @@
 		<!-- </div> Footer musi być w #content bo coś sie kolory wylewają -->
 		<div id="footer">&copy; 2022 A.D osoba hostująca nwm</div>
    </div>
+   <script type="text/javascript">
+     const boo = () => {
+        const el = document.getElementById('boo');
+        el.innerHTML = "znajdź <a href=\"toniejeststrona404\" style=\"text-decoration: none; color:black;\">*</a>"
+        el.removeAttribute('id');
+
+     }
+   </script>
 </body>
