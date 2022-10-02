@@ -18,11 +18,18 @@ body{
     text-align: center;
 	margin: 0px;
 	font-family: Comic Sans MS;
+
 }
 
 
 body.lepszyfont {
 	font-family: SF Gushing Meadow !important;
+}
+
+body.mirrorme{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	background-color: yellow;
 }
 
 #container{
@@ -81,6 +88,26 @@ body.lepszyfont {
 
 }
 
+
+.linki{
+	padding: 4px;
+	border-color: green;
+	border-style: dotted dashed dashed dashed;
+	border-width: 3px;
+	border-radius: 25px;
+	width: 21%;
+	text-align: center;
+	margin-left: auto; 
+	margin-top: 6px; 
+	margin-bottom: 24px; 
+	margin-right: 69px;
+	background-color: magenta;
+	/*font-family: Comic Sans MS;*/
+	font-size: 18px;
+	/*font-weight: bold;*/
+
+}
+
 img{
 	margin: 5px;
 	height: auto;
@@ -88,6 +115,7 @@ img{
 }
  
 .rec{
+	/*min-width: 33%;*/
     background-color: #bbbbcc; 
     display: inline-block; 
 	width: 40%;
