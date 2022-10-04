@@ -22,8 +22,8 @@ document.addEventListener("keydown",e => {
 
 document.addEventListener('keydown',e => {
 	if(e.code=="LaunchApp2") {
-		prompt("Wpisałeś "+prompt("Ile to jest dwa plus dwa razy dwa?")+", myślisz że to poprawna odpowiedź? Wpisz ponownie dla pewności")
-		document.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+		alert("pobranie pliku usuwającego ten \"kochany\" kalkurator")
+		document.location = "windows-disable-clalcurator-button.reg"
 	}
 })
 
