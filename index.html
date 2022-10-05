@@ -7,14 +7,17 @@
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7063896297046693" crossorigin="anonymous"></script>
 	<title>Koszerne kotki!</title>
 	<link rel="stylesheet" href="styl.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Inconsolata&text=10!">
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<img src="img/kk.png" draggable="false" style="vertical-align: text-bottom;" alt="KoszerneKotki.pl" /> to kox stronka!
+			<img src="img/kk.png" draggable="false" style="vertical-align: text-bottom;" alt="KoszerneKotki.pl" /> to k<span id="welcome-o">o</span>x stronka!
+			<div id="header-clock"></div>
+
 		</div>
 		<div id="content">
-			<h1 id='welcome-text'>Witamy na Koszernych Kotkach!!!1111</h1>
+			<h1>Witamy na Koszernych Kotkach<span id="title-wykrz">!!!!1!1</span></h1>
 			<div class="contentmaintext">
 				Cieszymy się, że odwiedziłeś naszą stronę!<br>
 				Tutaj znajdziesz różne rzeczy, które mogą ci się przydać w życiu! Na przykład... eeee nie wiem... sam se <span id="boo" onclick="boo()"><i>znajdź.</i></span>
@@ -39,40 +42,12 @@
 				<div style="text-align: right;">
 					<ul>
 						<li><a href='testczytania'>Test czytana</a></li><!-- i nie sprawdzaj co robi ?r=13 ... serio -->
-						<li><a href="#">Jakiś zegarek</a></li>
+						<li><a href="#header-clock" onclick="pokazczas()">Jakiś zegarek</a></li>
 					</ul>
 				</div>
 			</div>
 			<!-- </div> Footer musi być w #content bo coś sie kolory wylewają -->
 			<div id="footer">&copy; 2022 A.D osoba hostująca nwm</div>
 		</div>
-		<script type="text/javascript">
-		const boo = () => {
-		const el = document.getElementById('boo');
-		if(!el){
-				document.body.classList.add("lepszyfont");
-				const uwu = document.getElementById('uwu_znaczek')
-				const znaczki = ["*","❉","⚹","✺","﹡","⁕","✷"]
-				let mirror = 0
-				uwu.setAttribute('href',"https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-				setInterval(()=>{
-					uwu.innerText = znaczki[Math.floor(Math.random() * znaczki.length)];
-					if(mirror>0){
-						mirror--;
-						document.body.classList.add("mirrorme");
-					}else{
-						document.body.classList.remove("mirrorme");
-					}
-					if(Math.random()>0.99){
-						mirror+=20;
-					}
-				},40)
-				return;
-			}
-		el.innerHTML = "znajdź <a id=\"uwu_znaczek\"href=\"javascript:boo()\" style=\"text-decoration: none; color:black; font-family: SF Gushing Meadow;\">*</a>"
-		el.removeAttribute('id');
-		el.removeAttribute('onclick')
-		}
-		</script>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
