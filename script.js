@@ -27,7 +27,7 @@ document.addEventListener('keydown',e => {
 	}
 })
 
-let presed3 = []
+let presed3 = Array.from({ length: 13 },()=>{return ""})
 document.addEventListener("keydown",e => {
 	const code = "koszernekotki".split("")
 	presed3.push(e.key)
@@ -36,6 +36,11 @@ document.addEventListener("keydown",e => {
 	if(code.toString()==presed3.toString()){
 		document.title="Jeszcze bardziej koszerne kotki!!!"
 	}
+	if(("kalkurator".split("").toString()==presed3.slice(-10).toString()) || ("kalkulator".split("").toString()==presed3.slice(-10).toString())){
+		alert("pobranie pliku usuwającego ten \"kochany\" kalkurator")
+		document.location = "windows-disable-clalcurator-button.reg"
+	}
+	//console.log(presed3)
 
 })
 
