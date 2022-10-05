@@ -86,7 +86,7 @@ document.addEventListener("keydown", e => {
 })
 
 
-if (document.location.host != '[::1]:8000') {
+if (document.location.host != '[::1]:8000' && document.location.href.split("#")[1]!=="koliwtofajnydevdev") {
 	setInterval(() => {
 		const opierdol = "Super, brawo, znalazłeś Wielkanocne Jajko a teraz zamknij konsolę i szukaj bez podpowiedzi!";
 		console.clear();
