@@ -112,11 +112,10 @@ function calculate_hash(input,r=10){
 	if(r==0){return sha256(input)}
 	return calculate_hash(sha256(input),r-1).slice(0, 32) + calculate_hash(sha256(input+r),r-1).slice(0, 16) 
 }
-
-
-
 // hash lib end
 
+
+// jak ktoś złamie tego hasha to brawo, wyślij mi wiadomość na DM lub w repo strony daj znać że znasz hasło. może będzie jakaś naroda :-)
 if (document.location.host != '[::1]:80001' && calculate_hash(document.location.href.split("#")[1]) !== "83$372$ep6en1$1sns$0706$s3$0nn$ep799ip79700$ps00") {
 	setInterval(() => {
 		const opierdol = "Super, brawo, znalazłeś Wielkanocne Jajko a teraz zamknij konsolę i szukaj bez podpowiedzi!";
